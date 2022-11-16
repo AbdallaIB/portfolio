@@ -53,10 +53,6 @@
     color                : white;
 }
 
-.fluid-grid {
-    grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
-}
-
 .App-link {
     color: #61dafb;
 }
@@ -83,4 +79,51 @@
         -webkit-transform: rotate(360deg);
         transform        : rotate(360deg);
     }
+}
+
+.container {
+    width       : 100%;
+    max-width   : 90%;
+    padding     : 1rem 0;
+    margin-right: auto;
+    margin-left : auto;
+}
+
+@media only screen and (min-width: 320px) {
+    .container {
+        max-width: 90% !important;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .container {
+        max-width: 90% !important;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 95% !important;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        max-width: 90% !important;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .container {
+        max-width: 90% !important;
+    }
+}
+
+@media only screen and (min-width: 1536px) {
+    .container {
+        max-width: 90% !important;
+    }
+
 }

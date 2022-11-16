@@ -10,7 +10,7 @@ const App = () => {
     }
   };
   return (
-    <div className="flex flex-col items-center justify-start w-full h-full bg-gray-50">
+    <div className="flex flex-col items-center justify-start container bg-gray-900 py-4 bg-gray-50">
       <Nav scrollSectionIntoView={handleScrollIntoView} />
       <Routes />
     </div>

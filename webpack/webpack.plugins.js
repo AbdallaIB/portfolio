@@ -20,6 +20,10 @@ module.exports = [
     process: 'process/browser',
   }),
   new TsconfigPathsPlugin({
-    configFile: './tsconfig.json',
+    configFile: path.resolve(__dirname, './tsconfig.json'),
+    extensions: ['.ts', '.tsx', '.js'],
+    logLevel: 'INFO',
+    baseUrl: path.resolve(__dirname, '.'),
+    mainFields: ['browser', 'main'],
   }),
 ];

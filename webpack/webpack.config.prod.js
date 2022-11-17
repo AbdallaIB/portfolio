@@ -1,3 +1,6 @@
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+const path = require('path');
+
 module.exports = {
   mode: 'production',
   entry: './src/index.tsx',
@@ -17,6 +20,15 @@ module.exports = {
       // Custom Aliases
       ...require('./webpack.aliases'),
     },
+    plugins: [
+      new TsconfigPathsPlugin({
+        configFile: path.resolve('tsconfig.json'),
+        extensions: ['.ts', '.tsx', '.js'],
+        logLevel: 'INFO',
+        baseUrl: path.resolve('./'),
+        mainFields: ['browser', 'main'],
+      }),
+    ],
   },
   stats: 'errors-warnings',
   optimization: {

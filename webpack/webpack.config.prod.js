@@ -21,7 +21,6 @@ module.exports = {
       ...require('./webpack.aliases'),
     },
     plugins: [
-      ...require('./webpack.plugins'),
       new TsconfigPathsPlugin({
         configFile: path.resolve('tsconfig.json'),
         extensions: ['.ts', '.tsx', '.js'],

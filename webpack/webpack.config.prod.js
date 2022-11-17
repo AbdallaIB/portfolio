@@ -15,14 +15,9 @@ module.exports = {
   plugins: [...require('./webpack.plugins')],
   resolve: {
     extensions: ['.js', '.ts', '.jsx', '.tsx', '.css'],
-    alias: {
-      process: 'process/browser',
-      // Custom Aliases
-      ...require('./webpack.aliases'),
-    },
     plugins: [
       new TsconfigPathsPlugin({
-        configFile: path.resolve('tsconfig.extend.json'),
+        configFile: path.resolve('tsconfig.json'),
         extensions: ['.ts', '.tsx', '.js'],
         logLevel: 'INFO',
         baseUrl: path.resolve('./'),

@@ -1,6 +1,7 @@
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const webpack = require('webpack');
 require('dotenv').config();
 
@@ -18,5 +19,5 @@ module.exports = [
   new webpack.ProvidePlugin({
     process: 'process/browser',
   }),
-  new webpack.EnvironmentPlugin(['SOCKET_ENDPOINT', 'BASE_API_URL']),
+  new TsconfigPathsPlugin(),
 ];

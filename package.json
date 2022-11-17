@@ -23,10 +23,6 @@
     "lint:fix": "eslint --fix ."
   },
   "dependencies": {
-    "@hookform/resolvers": "^2.8.8",
-    "@hot-loader/react-dom": "^17.0.2",
-    "mobx": "^6.5.0",
-    "mobx-react": "^7.3.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-router-dom": "^6.3.0",
@@ -34,6 +30,7 @@
     "typescript": "^4.8.3"
   },
   "devDependencies": {
+    "@hot-loader/react-dom": "^17.0.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^12.0.4",
     "@testing-library/user-event": "^12.1.10",
@@ -67,6 +64,7 @@
     "react-scripts": "^5.0.1",
     "tailwindcss": "^3.1.8",
     "ts-loader": "^9.3.1",
+    "tsconfig-paths-webpack-plugin": "^4.0.0",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^4.11.0"

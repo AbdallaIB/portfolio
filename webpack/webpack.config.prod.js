@@ -12,6 +12,11 @@ module.exports = {
   plugins: [...require('./webpack.plugins')],
   resolve: {
     extensions: ['.js', '.ts', '.jsx', '.tsx', '.css'],
+    alias: {
+      process: 'process/browser',
+      // Custom Aliases
+      ...require('./webpack.aliases'),
+    },
   },
   stats: 'errors-warnings',
   optimization: {

@@ -19,5 +19,7 @@ module.exports = [
   new webpack.ProvidePlugin({
     process: 'process/browser',
   }),
-  new TsconfigPathsPlugin(),
+  new TsconfigPathsPlugin({
+    configFile: './tsconfig.json',
+  }),
 ];
